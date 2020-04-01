@@ -45,8 +45,8 @@ func main() {
 
 func newClient() *redis.Client {
 	client := redis.NewClient(&redis.Options{
-		Addr:      "master.cf-8477718e-2180-43f.vgi9g4.usw2.cache.amazonaws.com:6379",
-		Password:  "196e76b243b8cf8b1748c5142c2df0e3a1fed8448a13061f7d6fbf4eec2692a6", // no password set - d1ea6f732e97324b6ae7abea9580d76de8cefb288cec6eca3d36d3cee995ab7e
+		Addr:      "host:6379",
+		Password:  "password", // no password set - 
 		DB:        0,                                                                  // use default DB
 		TLSConfig: &tls.Config{},                                                      //for at transit encryption
 	})
