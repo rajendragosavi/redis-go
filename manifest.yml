@@ -1,9 +1,9 @@
 applications:
 - name: my-redis-go-app
-  memory: 1GB
-  instances: 5
+  memory: 64M
+  instances: 1
   buildpacks:
   - "https://github.com/cloudfoundry/go-buildpack.git#v1.8.29"
   env:
-    GOVERSION: go1.8.3
-    GOPACKAGENAME: github.com/rajendragosavi/predix-go-sample-app
+    GOVERSION: go1.8.7
+    GOPACKAGENAME: github.com/rajendragosavi/redis-go
